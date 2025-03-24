@@ -1,0 +1,38 @@
+:root {
+    --primary: #6a1b9a;
+    --secondary: #ffab00;
+    --backgroud-color: #000;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+head {
+    background-color: var(--backgroud-color);
+}
+
+.black {
+    background-color: var(--backgroud-color);
+}
+.coiny-font {
+    font-family: 'Coiny', cursive;
+}
+.bg-purple {
+    background-color: var(--primary);
+}
+.btn-gold {
+    background-color: var(--backgroud-color);
+    color: white;
+}
+.navbar-brand img {
+    height: 50px;
+    background-color: var(--backgroud-color);
+}
+.carousel-item {
+    height: 60vh;
+    min-height: 400px;
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
