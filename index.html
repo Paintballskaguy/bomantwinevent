@@ -197,69 +197,84 @@
             <!-- Add-On's Section - Standard Cards -->
             <div class="container mt-5">
                 <h2 class="text-center coiny-font mb-4">Add-Ons</h2>
-                <div class="row g-4">
-                    <!-- First Row (3 cards) -->
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Beer/Wine Package</h5>
-                                <h4 class="text-primary">$250</h4>
-                                <ul class="text-start">
-                                    <li>Client provides alcohol</li>
-                                    <li>Venue provides 2 staff</li>
-                                    <li>Venue provides cups</li>
-                                </ul>
+                <div id="addonsCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="card shadow-sm h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beer/Wine Package</h5>
+                                            <h4 class="text-primary">$250</h4>
+                                            <ul class="text-start">
+                                                <li>Client provides alcohol</li>
+                                                <li>Venue provides 2 staff</li>
+                                                <li>Venue provides cups</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <div class="card shadow-sm h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Full Bar Package</h5>
+                                            <h4 class="text-primary">$500</h4>
+                                            <ul class="text-start">
+                                                <li>Client provides alcohol</li>
+                                                <li>Venue provides 2 staff and 1 security</li>
+                                                <li>Venue provides cups, ice, & bar tools</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <div class="card shadow-sm h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sound & Lighting Tech</h5>
+                                            <p>Sound tech: <span class="text-primary">$75</span> (covers 2 bands)<br>
+                                            <span class="text-primary">$50</span> per band beyond (Required if connecting more than Bluetooth)</p>
+                                            <p>Lighting tech: <span class="text-primary">$75</span> (custom light controller for spots, lasers, & fog)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-md-6">
+                                    <div class="card shadow-sm h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Door Attendant & Security</h5>
+                                            <p>Door attendant: <span class="text-primary">$80</span></p>
+                                            <p>Security: <span class="text-primary">$100</span> each</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="card shadow-sm h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cleaning Fee & Venue Attendant</h5>
+                                            <p>Cleaning fee (Take what you want and leave): <span class="text-primary">$300</span></p>
+                                            <p>Venue attendant for trash, spills, bathrooms, etc.: <span class="text-primary">$100</span> each</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-        
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Full Bar Package</h5>
-                                <h4 class="text-primary">$500</h4>
-                                <ul class="text-start">
-                                    <li>Client provides alcohol</li>
-                                    <li>Venue provides 2 staff and 1 security</li>
-                                    <li>Venue provides cups, ice, & bar tools</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Sound & Lighting Tech</h5>
-                                <p>Sound tech: <span class="text-primary">$75</span> (covers 2 bands)<br>
-                                <span class="text-primary">$50</span> per band beyond (Required if connecting more than Bluetooth)</p>
-                                <p>Lighting tech: <span class="text-primary">$75</span> (custom light controller for spots, lasers, & fog)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row g-4 mt-2">
-                    <!-- Second Row (2 centered cards) -->
-                    <div class="col-md-6">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Door Attendant & Security</h5>
-                                <p>Door attendant: <span class="text-primary">$80</span></p>
-                                <p>Security: <span class="text-primary">$100</span> each</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-md-6">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Cleaning Fee & Venue Attendant</h5>
-                                <p>Cleaning fee (Take what you want and leave): <span class="text-primary">$300</span></p>
-                                <p>Venue attendant for trash, spills, bathrooms, etc.: <span class="text-primary">$100</span> each</p>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    <!-- controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#addonsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#addonsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -331,7 +346,7 @@
             </h3>
             <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                    Our venue rental includes tables, chairs, basic linens, and standard AV equipment.
+                    Our venue rental includes tables, chairs, plug and play PA system with Bluetooth.
                 </div>
             </div>
         </div>
@@ -357,12 +372,12 @@
             <h2 class="coiny-font">Contact Us</h2>
             <address>
                 <strong>Boman Twin Event Center</strong><br>
-                123 Event Center Way<br>
-                City, ST 12345<br>
-                <abbr title="Phone">P:</abbr> (555) 123-4567<br>
-                <abbr title="Email">E:</abbr> info@bomantwin.com
+                2909 S Sheridan Rd<br>
+                Tulsa, OK 74129<br>
+                <abbr title="Phone">P:</abbr> (918) 820-2830<br>
+                <abbr title="Email">E:</abbr> bomantwinec@gmail.com
             </address>
-            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary">Get Directions</a>
+            <a href="https://www.google.com/maps/dir//2909+S+Sheridan+Rd,+Tulsa,+OK+74129" target="_blank" class="btn btn-outline-primary">Get Directions</a>
         </div>
         <div class="col-md-6">
             <div class="ratio ratio-16x9">
