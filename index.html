@@ -146,7 +146,6 @@
                     <p>Located just off the Broken Arrow Expressway at 31st and Sheridan, Boman Twin Event Center provides a versatile 10,500 sq ft venue featuring a full plug-and-play PA system with lighting and a stage, making it ideal for concerts, raves, conferences, gaming conventions, and private parties. Our spacious main room offers 5,500 sq ft of flexible open space, accommodating up to 600 guests with customizable arrangements.</p>
 
                     <p>We cater to a wide range of events and audiences, from concerts and quinceañeras to trade shows and birthday parties. With easy access to major highways, ample parking, and nearby hotels and dining options, our location ensures convenience for every occasion. Our full-service bar, catering prep area, and adaptable amenities are ready to support your event's unique requirements.</p>
-                    <img src="assets/2024-07-13.jpg" class="d-block w-50 mx-auto front" alt="Boman Twin Event Center Front">
                 </div>
             </div>
         </section>
@@ -195,88 +194,91 @@
             </div>
         
             <!-- Add-On's Section - Standard Cards -->
-            <div class="container mt-5">
-                <h2 class="text-center coiny-font mb-4">Add-Ons</h2>
-                <div id="addonsCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row g-4">
-                                <div class="col-md-4">
-                                    <div class="card shadow-sm h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Beer/Wine Package</h5>
-                                            <h4 class="text-primary">$250</h4>
-                                            <ul class="text-start">
-                                                <li>Client provides alcohol</li>
-                                                <li>Venue provides 2 staff</li>
-                                                <li>Venue provides cups</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-4">
-                                    <div class="card shadow-sm h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Full Bar Package</h5>
-                                            <h4 class="text-primary">$500</h4>
-                                            <ul class="text-start">
-                                                <li>Client provides alcohol</li>
-                                                <li>Venue provides 2 staff and 1 security</li>
-                                                <li>Venue provides cups, ice, & bar tools</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-4">
-                                    <div class="card shadow-sm h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Sound & Lighting Tech</h5>
-                                            <p>Sound tech: <span class="text-primary">$75</span> (covers 2 bands)<br>
-                                            <span class="text-primary">$50</span> per band beyond (Required if connecting more than Bluetooth)</p>
-                                            <p>Lighting tech: <span class="text-primary">$75</span> (custom light controller for spots, lasers, & fog)</p>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="container mt-5 addon">
+                <h2 class="text-center mb-4">Add-Ons</h2>
+                <div id="addonsCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">                   
+                    <!-- MOBILE: 1 card, DESKTOP: 3 cards -->
+                    <div class="carousel-item active">
+                      <div class="row g-3 justify-content-center align-items-stretch h-100">
+                        <div class="col-10 col-md-4">
+                          <div class="card shadow-sm h-100">
+                            <div class="card-body p-2">
+                              <h5 class="card-title">Beer/Wine Package</h5>
+                              <h4 class="text-primary">$250</h4>
+                              <ul class="text-start">
+                                <li>Client provides alcohol</li>
+                                <li>Venue provides 2 staff</li>
+                                <li>Venue provides cups</li>
+                              </ul>
                             </div>
+                          </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 justify-content-center">
-                                <div class="col-md-6">
-                                    <div class="card shadow-sm h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Door Attendant & Security</h5>
-                                            <p>Door attendant: <span class="text-primary">$80</span></p>
-                                            <p>Security: <span class="text-primary">$100</span> each</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="card shadow-sm h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Cleaning Fee & Venue Attendant</h5>
-                                            <p>Cleaning fee (Take what you want and leave): <span class="text-primary">$300</span></p>
-                                            <p>Venue attendant for trash, spills, bathrooms, etc.: <span class="text-primary">$100</span> each</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        
+                        <!-- On desktop only: show next 2 cards -->
+                        <div class="col-md-4 d-none d-md-block">
+                          <div class="card shadow-sm h-100">
+                            <div class="card-body p-2">
+                              <h5 class="card-title">Full Bar Package</h5>
+                              <h4 class="text-primary">$500</h4>
+                              <ul class="text-start">
+                                <li>Client provides alcohol</li>
+                                <li>Venue provides 2 staff and 1 security</li>
+                                <li>Venue provides cups, ice, & bar tools</li>
+                              </ul>
                             </div>
+                          </div>
                         </div>
+                        
+                        <div class="col-md-4 d-none d-md-block">
+                          <div class="card shadow-sm h-100">
+                            <div class="card-body p-2">
+                              <h5 class="card-title">Sound & Lighting Tech</h5>
+                              <p>Sound tech: <span class="text-primary">$75</span> (covers 2 bands)</p>
+                              <p>Lighting tech: <span class="text-primary">$75</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     
-                    <!-- controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#addonsCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#addonsCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                      <div class="row g-3 justify-content-center align-items-stretch h-100">
+                        <!-- On mobile: show 1 card, desktop: show 2 cards -->
+                        <div class="col-10 col-md-6">
+                          <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                              <h5 class="card-title">Door Attendant & Security</h5>
+                              <p>Door attendant: <span class="text-primary">$80</span></p>
+                              <p>Security: <span class="text-primary">$100</span> each</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-10 col-md-6">
+                          <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                              <h5 class="card-title">Cleaning Fee & Venue Attendant</h5>
+                              <p>Cleaning fee: <span class="text-primary">$300</span></p>
+                              <p>Venue attendant: <span class="text-primary">$100</span> each</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Controls. -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#addonsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark p-2 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#addonsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark p-2 rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-            </div>
+              </div>
         </section>
         <!-- Events Calendar -->
 <section id="events" class="container my-5">
@@ -304,34 +306,6 @@
         </form>
     </div>
 </section>
-</section>
-
-<!-- Book a Tour Form -->
-<section id="book" class="bg-purple text-white py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <h2 class="coiny-font text-center mb-4">Book a Tour</h2>
-                <form>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Email Address" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="tel" class="form-control" placeholder="Phone Number">
-                    </div>
-                    <div class="mb-3">
-                        <input type="date" class="form-control">
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-gold">Schedule Tour</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 </section>
 
 <!-- FAQ Section -->
@@ -403,13 +377,63 @@
     </div>
 </section>
 
+<!--Section of Aside. this was not part of the orignial plan-->
+<aside class="bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/gravehuffer1.jpg" alt="Event Center Photo" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h3 class="coiny-font">Why Choose Boman Twin?</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Central location with easy highway access</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Flexible spaces for any event type</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Professional sound and lighting included</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Ample parking for all guests</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Experienced staff to assist with planning</li>
+                </ul>
+                <a href="#book" class="btn btn-gold mt-3">Book Your Event Now</a>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- Book a Tour Form -->
+<section id="book" class="bg-purple text-white py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 class="coiny-font text-center mb-4">Book a Tour</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-gold">Schedule Tour</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Footer -->
 <footer class="bg-dark text-white py-4">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <h4 class="coiny-font">Boman Twin</h4>
-                <p>Creating unforgettable events since 2010.</p>
+                <p>Creating unforgettable events since 2022.</p>
             </div>
             <div class="col-md-4">
                 <h5>Quick Links</h5>
@@ -430,7 +454,7 @@
         </div>
         <hr>
         <div class="text-center">
-            <p class="mb-0">&copy; 2023 Boman Twin Event Center. All rights reserved.</p>
+            <p class="mb-0">&copy; 2025 Boman Twin Event Center. All rights reserved.</p>
         </div>
     </div>
 </footer>
