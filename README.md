@@ -16,6 +16,17 @@ This is the official website for Boman Twin Event Center, a versatile event venu
 - **Email Capture**: Newsletter subscription
 - **Bootstrap 5**: Modern framework for styling and components
 
+## Sections to Grade
+- **Task 1**: Header - Comment section Navbar Section/ logo and colors
+- **Task 2**: Banner Section - comment <!-- What We Offer & About -->
+- **Task 3**: Single Item Carousel -Comment Pictures of Awesome Carousel
+- **Task 4**: Multiple Item Carousel - comment Add-On's Section - Standard Cards
+- **Task 5**: Drop Down Menus - Comment section FAQ Section 
+- **Task 6**: Aside section - Comment Section of Aside. this was not part of the orignial plan 
+- **Task 7**: Free Section - Comment Book a Tour Form
+- **Task 8**: Footer - Comment Footer.
+
+
 ## Technologies Used
 - HTML5
 - CSS3
