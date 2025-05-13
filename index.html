@@ -432,33 +432,39 @@
 <section id="book" class="bg-purple text-white py-5">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-8">
                 <h2 class="coiny-font text-center mb-4">Book a Tour</h2>
                 
-                <!-- Custom-styled Google Form Embed -->
-                <div class="google-form-container bg-white p-3 rounded shadow">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxBhxJpIxKewGZSOSKvOoaHuVTo6TKf_gx20Y2RQdmiKpItQ/viewform?embedded=true" width="640" height="1949" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                            style="height: 700px; width: 100%;" 
-                            frameborder="0" 
-                            marginheight="0" 
-                            marginwidth="0"
-                            title="Tour Booking Form">
-                        Loading...
-                    </iframe>
+                <!-- Form Toggle Button -->
+                <div class="text-center mb-4">
+                    <button id="formToggle" class="btn btn-gold btn-lg px-4" aria-expanded="false" aria-controls="formContainer">
+                        <i class="fas fa-calendar-alt me-2"></i> Show Booking Form
+                    </button>
                 </div>
                 
-                <style>
-                    .google-form-container {
-                        background-color: white;
-                    }
-                    .google-form-container iframe {
-                        min-height: 600px;
-                    }
-                    @media (max-width: 768px) {
-                        .google-form-container iframe {
-                            min-height: 800px;
-                        }
-                    }
-                </style>
+                <!-- Collapsible Google Form Container -->
+                <div id="formContainer" class="collapse">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxBhxJpIxKewGZSOSKvOoaHuVTo6TKf_gx20Y2RQdmiKpItQ/viewform?embedded=true" 
+                                frameborder="0" 
+                                marginheight="0" 
+                                marginwidth="0"
+                                title="Boman Twin Event Center Tour Booking Form"
+                                class="rounded shadow"
+                                loading="lazy">
+                            Loading...
+                        </iframe>
+                    </div>
+                    <div class="text-center mt-3">
+                        <p class="mb-1">Having trouble with the form?</p>
+                        <a href="https://forms.gle/KQ8Y4zkvLBvFqARm6" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn btn-outline-light btn-sm">
+                           Open in New Window
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -506,6 +512,32 @@
       ]
     }
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const formToggle = document.getElementById('formToggle');
+            const formContainer = document.getElementById('formContainer');
+            
+            // Initialize Bootstrap Collapse
+            const formCollapse = new bootstrap.Collapse(formContainer, {
+                toggle: false
+            });
+            
+            formToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                if (isExpanded) {
+                    formCollapse.hide();
+                    this.innerHTML = '<i class="fas fa-calendar-alt me-2"></i> Show Booking Form';
+                    this.setAttribute('aria-expanded', 'false');
+                } else {
+                    formCollapse.show();
+                    this.innerHTML = '<i class="fas fa-times me-2"></i> Hide Form';
+                    this.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+        </script>
 
 <!-- Footer -->
 <footer class="bg-dark text-white py-4">
